@@ -9,7 +9,14 @@
   <body>
     <form action="">
       <label for="nombre" class="form-label mt-3">Nombre</label>
-      <input type="text" class="form-control mb-3" id="nombre" placeholder="nombre de usuario" required nonce="1234">
+      <input type="text" class="form-control mb-3" id="nombre" placeholder="nombre de usuario" required>
+
+      <label for="email" class="form-label mt-3">Email</label>
+      <input type="email" class="form-control mb-3" id="email" placeholder="email del usuario" required>
+
+      <label for="mensaje" class="form-label mt-3">Mensaje</label>
+      <textarea name="mensaje" id="mensaje" class="form-control mb-3" placeholder="Escribe tu mensaje"></textarea>
+      <input type="submit" class="btn btn-primary" value="enviar">
     </form>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
