@@ -1,4 +1,17 @@
-
+:root {
+  --background: #8fced9;
+  --text-color: #000713;
+  --primary-color: darkcyan;
+  --secondary-color: #77a0a6;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: var(--background);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 20px;
+}
 .form-control:focus{
   border-color: darkcyan;
   box-shadow: 0 0 0 .25rem rgba(0, 139, 139, 0.3);
