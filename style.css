@@ -1,22 +1,32 @@
 :root {
-  --background: #8fced9;
-  --text-color: #000713;
   --primary-color: darkcyan;
-  --secondary-color: #77a0a6;
-  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --primary-light: #20b2aa;
+  --primary-dark: #008b8b;
+  --bg-light: #f8f9fa;
+  --bg-dark: #1a1a1a;
+  --text-light: #ffffff;
+  --text-dark: #212529;
 }
-body {
-  background-color: var(--background);
-  color: var(--text-color);
-  font-family: var(--font-family);
-  margin: 0;
-  padding: 20px;
+
+body[data-bs-theme="dark"] {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
 }
-.form-control:focus{
-  border-color: darkcyan;
-  box-shadow: 0 0 0 .25rem rgba(0, 139, 139, 0.3);
+
+.navbar {
+  background-color: var(--primary-color) !important;
 }
-.btn{
-  background-color: darkcyan;
-  border: none;
+
+.form-control:focus {
+  border-color: var(--primary-light);
+  box-shadow: 0 0 0 0.2rem rgba(0, 139, 139, 0.25);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-dark);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
 }
